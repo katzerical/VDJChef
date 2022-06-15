@@ -299,20 +299,15 @@ plot_heatmap_clonotypes <- function(input, clonotype_by, patient_by = NULL, samp
 #'
 #' Visualize V, D or J gene frequencies across Patients or Samples in a bar graph.
 #'
-#' @param df
+#' @param df the metadata
 #' @param gene either v_gene, d_gene or j_gene
 #' @param chain either TRA or TRB
 #' @param plot only bar
-#' @param y.axis
-#' @param order
-#' @param scale
+#' @param y.axis y axis
+#' @param order the order
+#' @param scale the scale
 #' @param split.by Which meta.data to split the data by.
 #'
-#'
-#' @return
-#' @export
-#'
-#' @examples
 VDJ_visualize <- function (df, gene = "v_gene", chain = "TRA", plot = "bar", y.axis = "sample",
                         order = "gene", scale = TRUE, split.by = NULL){
 
