@@ -308,6 +308,8 @@ plot_heatmap_clonotypes <- function(input, clonotype_by, patient_by = NULL, samp
 #' @param scale the scale
 #' @param split.by Which meta.data to split the data by.
 #'
+#' @export
+#'
 VDJ_visualize <- function (df, gene = "v_gene", chain = "TRA", plot = "bar", y.axis = "sample",
                         order = "gene", scale = TRUE, split.by = NULL){
 
